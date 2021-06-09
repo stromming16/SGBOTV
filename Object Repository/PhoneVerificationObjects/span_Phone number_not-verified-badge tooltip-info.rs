@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Phone number_not-verified-badge tooltip-info</name>
+   <tag></tag>
+   <elementGuidId>0c255cd6-0707-4d05-859e-ae4a66857bbe</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='region-phone']/div/form/dl/dd/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#region-phone > div.change-email-phone-view > form.verify-form > dl > dd > span.not-verified-badge.tooltip-info</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>not-verified-badge tooltip-info</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-tooltip</name>
+      <type>Main</type>
+      <value>Unconfirmed</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-describedby</name>
+      <type>Main</type>
+      <value>ui-id-4</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;region-phone&quot;)/div[@class=&quot;change-email-phone-view&quot;]/form[@class=&quot;verify-form&quot;]/dl[1]/dd[1]/span[@class=&quot;not-verified-badge tooltip-info&quot;]</value>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='region-phone']/div/form/dl/dd/span</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/form/dl/dd/span</value>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Login</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4a31e33b-5c36-470c-99a7-90fcc8abd6f3</testCaseGuid>
+   <variable>
+      <defaultValue>'the.l.a.s.t.o.f.ustmp@gmail.com'</defaultValue>
+      <description></description>
+      <id>7eee1aa8-8bba-458b-83ca-79f81d007565</id>
+      <masked>false</masked>
+      <name>email</name>
+   </variable>
+   <variable>
+      <defaultValue>'Password.1*'</defaultValue>
+      <description></description>
+      <id>9c52a274-3513-436c-94e2-6ccf65ab1f8f</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
+</TestCaseEntity>
