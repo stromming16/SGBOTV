@@ -25,11 +25,16 @@ public class Configurations {
 
 	public String CHROME_DRIVER = "C:\\Users\\" + c.pcusername + "\\Downloads\\Katalon_Studio\\configuration\\resources\\drivers\\chromedriver_win32\\chromedriver.exe";
 	public String FIREFOX_DRIVER = "C:\\Users\\" + c.pcusername + "\\Downloads\\Katalon_Studio\\configuration\\resources\\drivers\\firefox_win64\\geckodriver.exe";
-	public String ANTICATCHA_EXT = c.disco +":\\anticaptcha-plugin_v0.54.crx";
+	public String ANTICATCHA_EXT = c.disco +":\\anticaptcha-plugin_v0.54";
+	public String FPD_EXT = c.disco +":\\FPD";
+	public String ULTRASURF_EXT = c.disco +":\\UltraSurf";
+
 	public String PROF_CONF_USER_DATA_DIR = "--user-data-dir=C:\\Users\\" + c.pcusername + "\\AppData\\Local\\Google\\Chrome\\User Data\\";
 	public String PROF_CONF_DIRECTORY = "--profile-directory=Profile ";
 	public String PROF_CONF_APPID = "--app-id=epiocimfnhgleklijmjmglgphfkcdbip";
-	public String PROF_CONF_ANTICATCHA_EXT = "--load-extension=" + c.disco + ":\\anticaptcha-plugin_v0.54";
+	public String PROF_CONF_LOAD_EXTNS = "--load-extension=" + ANTICATCHA_EXT + "," + FPD_EXT + "," + ULTRASURF_EXT;
+	public String PROF_CONF_LOAD_EXTNS_1 = "--load-extension=" + ANTICATCHA_EXT + "," + ULTRASURF_EXT;
+	public String PROF_CONF_LOAD_EXTNS_2 = "--load-extension=" + ANTICATCHA_EXT;
 
 	public String TOR_PATH = "C:\\Users\\" + c.pcusername + "\\Desktop\\Tor Browser\\Browser\\firefox.exe";
 	public String TOR_PROFILE_PATH = "C:\\Users\\" + c.pcusername + "\\Desktop\\Tor Browser\\Browser\\TorBrowser\\Data\\Browser\\profile.default";

@@ -28,7 +28,7 @@ public class SgTestObjects {
 	public TestObject div_USDT_triangle = findTestObject('Object Repository/LogOutObjects/div_USDT_triangle');
 	public TestObject h1_Welcome = findTestObject('Object Repository/LoginObjects/h1_Welcome to StormGain');
 	public TestObject div_email_session = findTestObject('Object Repository/VerifySessionObjects/div_aangeles3344yopmail.com');
-	public TestObject div_Account = findTestObject('Object Repository/VerifySessionObjects/div_Account ID 3804053611'); 
+	public TestObject div_Account = findTestObject('Object Repository/VerifySessionObjects/div_Account ID 3804053611');
 
 	//login objects
 	public TestObject email_input = findTestObject('Object Repository/LoginObjects/input_Email_login');
@@ -50,8 +50,8 @@ public class SgTestObjects {
 	public TestObject msg_mail_sent = findTestObject('Object Repository/EmailVerificationObjects/p_We have sent a link to your email address. Please follow the link to complete verification');
 	public TestObject verified_badge_email = findTestObject('Object Repository/EmailVerificationObjects/span_r.ic.ard.os.andoyopmail.com_verified-badge tooltip-info');
 	public TestObject unverified_badge_email = findTestObject('Object Repository/EmailVerificationObjects/span_aangeles3345yopmail.com_not-verified-badge tooltip-info');
-	
-	
+	public TestObject span_verify_email = findTestObject('Object Repository/EmailVerificationObjects/span_Verify email')
+
 	//phone verification objects
 	public TestObject span_Edit_phone = findTestObject('Object Repository/PhoneVerificationObjects/span_Edit');
 	public TestObject input_Phone_phone = findTestObject('Object Repository/PhoneVerificationObjects/input_Phone number_phone');
@@ -60,7 +60,7 @@ public class SgTestObjects {
 	//public TestObject verified_badge_phone =
 	public TestObject err_phone_already_exist = findTestObject('Object Repository/PhoneVerificationObjects/div_This phone number already exists. Please provide another one');
 	public TestObject unverified_badge_phone = findTestObject('Object Repository/PhoneVerificationObjects/span_Phone number_not-verified-badge tooltip-info');
-	
+
 	//account error objects
 	public TestObject error_login = findTestObject('Object Repository/AccountsErrorsObjects/div_Invalid login or password. Number of attempts is limited. You can restore the password if it is necessary.Restore password');
 }

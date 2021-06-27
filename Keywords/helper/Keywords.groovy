@@ -31,13 +31,15 @@ public class Keywords {
 
 	public String KEY_FOLDER_DEPU = c.disco +":\\depuradas\\";
 
-	public String KEY_FOLDER_VERI = c.disco +":\\verificadas\\";
+	public String KEY_FOLDER_VERI ="C:\\verificadas\\";
 
 	public String KEY_FOLDER_VERI_ND = c.disco +":\\verificar_proximo_dia\\";
 
 	public String KEY_AMK_INICAR_SESION_CMD = "\"C:\\Users\\" + c.pcusername + "\\Desktop\\AMC\\ClicIniciarSesion.amk\"";
 
 	public String KEY_AMK_VERIFY_YOPMAIL_CMD = "\"C:\\Users\\" + c.pcusername + "\\Desktop\\AMC\\ClicVerificarYopmail.amk\"";
+
+	public String KEY_AMK_VERIFY_GMAIL = "\"C:\\Users\\" + c.pcusername + "\\Desktop\\AMC\\ClicVerificarGmail.amk\"";
 
 	public String KEY_AMK_CONFIRM_CMD = "\"C:\\Users\\" + c.pcusername + "\\Desktop\\AMC\\ClicConfirmarCorreo.amk\"";
 
@@ -50,6 +52,6 @@ public class Keywords {
 	public String KEY_AMK_RECAPTCHA_SGSEND_MAIL = "\"C:\\Users\\" + c.pcusername + "\\Desktop\\AMC\\IfRecaptchaFoundonStormGSendMail.amk\"";
 
 	public String KEY_AMK_LOGOUTSG = "\"C:\\Users\\" + c.pcusername + "\\Desktop\\AMC\\LogOutSG.amk\"";
-	
+
 	public String KEY_AMK_CREATE_SG = "\"C:\\Users\\" + c.pcusername + "\\Desktop\\AMC\\CreateSGAccount.amk\"";
 }

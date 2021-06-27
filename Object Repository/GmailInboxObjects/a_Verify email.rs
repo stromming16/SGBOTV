@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>a_Verify email</name>
+   <tag></tag>
+   <elementGuidId>0117ff32-9420-477e-9883-63cceaa286e4</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='m_9109092372192511790:1lr']/div[2]/table/tbody/tr/td/table/tbody/tr[2]/td/table/tbody/tr[2]/td/table/tbody/tr/td/table/tbody/tr[3]/td/div/a</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>td > div > a</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>https://9zmifg5k.r.eu-west-1.awstrack.me/L0/https:%2F%2Fapp.stormgain.com%2Fdeeplink.html%3Fmobile=verify-email%252Fprofile%252F404d3b1dc33f6f69d945a2aa243cb9e54782c34506b77cd7f925aee396badc3e%252F96beb7ac00b4d6c98dc1ce65583644ee%26desktop=%253FpendingActionId%253D96beb7ac00b4d6c98dc1ce65583644ee%2526confirmationCode%253D404d3b1dc33f6f69d945a2aa243cb9e54782c34506b77cd7f925aee396badc3e%2523modal_verifyEmail_profile/2/0102017a164ac46c-4f77b354-3999-4bad-b2da-4780c7d712b2-000000/5yQNT-tJFIvAb7pZ20_9RtN9GbU=219</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>target</name>
+      <type>Main</type>
+      <value>_blank</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-saferedirecturl</name>
+      <type>Main</type>
+      <value>https://www.google.com/url?q=https://9zmifg5k.r.eu-west-1.awstrack.me/L0/https:%252F%252Fapp.stormgain.com%252Fdeeplink.html%253Fmobile%3Dverify-email%25252Fprofile%25252F404d3b1dc33f6f69d945a2aa243cb9e54782c34506b77cd7f925aee396badc3e%25252F96beb7ac00b4d6c98dc1ce65583644ee%2526desktop%3D%25253FpendingActionId%25253D96beb7ac00b4d6c98dc1ce65583644ee%252526confirmationCode%25253D404d3b1dc33f6f69d945a2aa243cb9e54782c34506b77cd7f925aee396badc3e%252523modal_verifyEmail_profile/2/0102017a164ac46c-4f77b354-3999-4bad-b2da-4780c7d712b2-000000/5yQNT-tJFIvAb7pZ20_9RtN9GbU%3D219&amp;source=gmail&amp;ust=1623960428077000&amp;usg=AFQjCNHgJCI0t0rRP3SRK0mE3YhXx1QnhA</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Verify email</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;m_9109092372192511790:1lr&quot;)/div[2]/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[2]/td[1]/table[1]/tbody[1]/tr[2]/td[1]/table[1]/tbody[1]/tr[1]/td[1]/table[1]/tbody[1]/tr[3]/td[1]/div[1]/a[1]</value>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='m_9109092372192511790:1lr']/div[2]/table/tbody/tr/td/table/tbody/tr[2]/td/table/tbody/tr[2]/td/table/tbody/tr/td/table/tbody/tr[3]/td/div/a</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>//a[contains(text(),'Verify email')]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='link'])[1]/following::a[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Verify your email address'])[1]/following::a[2]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Verify email']/parent::*</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>//a[contains(@href, 'https://9zmifg5k.r.eu-west-1.awstrack.me/L0/https:%2F%2Fapp.stormgain.com%2Fdeeplink.html%3Fmobile=verify-email%252Fprofile%252F404d3b1dc33f6f69d945a2aa243cb9e54782c34506b77cd7f925aee396badc3e%252F96beb7ac00b4d6c98dc1ce65583644ee%26desktop=%253FpendingActionId%253D96beb7ac00b4d6c98dc1ce65583644ee%2526confirmationCode%253D404d3b1dc33f6f69d945a2aa243cb9e54782c34506b77cd7f925aee396badc3e%2523modal_verifyEmail_profile/2/0102017a164ac46c-4f77b354-3999-4bad-b2da-4780c7d712b2-000000/5yQNT-tJFIvAb7pZ20_9RtN9GbU=219')]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td/div/a</value>
+   </webElementXpaths>
+</WebElementEntity>

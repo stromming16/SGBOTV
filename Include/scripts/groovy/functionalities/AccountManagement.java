@@ -1,9 +1,15 @@
 package functionalities;
 
+import java.io.File;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
 import org.apache.commons.lang.RandomStringUtils;
 
+import com.opencsv.CSVReader;
 import com.opencsv.CSVWriter;
 
 public class AccountManagement {
@@ -43,6 +49,25 @@ public class AccountManagement {
 			}
 	  }
 	  
+	  public void editFileCSV(String filePath, String replace, int row, int col) throws IOException {
+		  File inputFile = new File(filePath);
+		  FileReader fr = new FileReader(inputFile);
+		  
+		  // Read existing file 
+		  CSVReader reader = new CSVReader(fr, ',');
+		  
+		  List<String[]> csvBody = reader.readAll();
+		  // get CSV row column  and replace with by using row and column
+		  csvBody.get(row)[col] = replace;
+		  reader.close();
+		  
+		  //Write to CSV file which is open
+		  CSVWriter writer = new CSVWriter(new FileWriter(inputFile), ',');
+		  writer.writeAll(csvBody);
+		  writer.flush();
+		  writer.close();
+	  }
+	  
 	  public String generateUsername(String type) {
 		  
 		  String email = "";
@@ -50,6 +75,38 @@ public class AccountManagement {
 		  email = "s"+temp.substring(0, temp.length()) + "@"+type+".com";
 		  
 		  return email;
+	  }
+	  
+	  public List<String> generateGmails(String gmail) {
+		  List<String> emails = new ArrayList<String>();
+		  int index = gmail.indexOf('@');
+		  String username = gmail.substring(0,index);
+		  int cCount = username.length();
+		  
+		  for(int i = 0; i < cCount; i++) {
+			  System.out.println(insertPeriodically(username, ".", i+1, i));
+		  }
+		  
+		  return emails;
+	  }
+	  
+	  public static String insertPeriodically(String text, String insert, int period, int location){
+		  StringBuilder builder = new StringBuilder(text.length() + insert.length() * (text.length()/period)+1);
+		  int index = 0;
+		  String prefix = "";
+		  while (index < text.length())
+		  {
+		      // Don't put the insert in the very first iteration.
+		      // This is easier than appending it *after* each substring
+			  if(location == index) {
+				  builder.append(prefix);
+			  }
+		      
+		      prefix = insert;
+		      builder.append(text.substring(index, Math.min(index + period, text.length())));
+		      index += location;
+		  }
+		  return builder.toString();
 	  }
 	  
 	  public String substractUserName(String email) {

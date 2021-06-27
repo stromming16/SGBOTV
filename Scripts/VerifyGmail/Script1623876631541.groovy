@@ -16,28 +16,39 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import helper.*
-import functionalities.*;
+import helper.GmailObjects as GmailObjects
+import helper.Keywords as Keywords
+import functionalities.*
 
-SgTestObjects sg = new SgTestObjects();
-ExecuteCmd ec = new ExecuteCmd();
-Keywords k = new Keywords();
+GmailObjects gm = new GmailObjects()
 
-boolean wellcomePre = false, password_input = false, password_inputPre = false;
+ExecuteCmd ec = new ExecuteCmd()
 
-wellcomePre = WebUI.verifyElementPresent(sg.h1_Welcome, 1, FailureHandling.CONTINUE_ON_FAILURE)
-password_input = WebUI.verifyElementPresent(sg.email_input, 1, FailureHandling.CONTINUE_ON_FAILURE)
-password_inputPre = WebUI.verifyElementPresent(sg.password_input, 1, FailureHandling.CONTINUE_ON_FAILURE)
+Keywords k = new Keywords()
 
-if(!wellcomePre || !password_input || !password_inputPre) {
-	WebUI.navigateToUrl('https://app.stormgain.com/profile-settings/#modal_login');
-	WebUI.waitForPageLoad(20);
+boolean firstMailPre = false, btn_emailPre = false, a_verifyPre = false, link_verifyPre = false;
+//navegar a la pagina de yopmail
+WebUI.navigateToUrl('http://www.gmail.com/');
+
+WebUI.waitForPageLoad(20);
+
+//buscar bandeja de correos
+firstMailPre = WebUI.verifyElementPresent(gm.firtsMail, 1, FailureHandling.CONTINUE_ON_FAILURE)
+
+if(firstMailPre) {
+	WebUI.click(gm.firtsMail, FailureHandling.CONTINUE_ON_FAILURE)
+	WebUI.delay(1);
+	println firstMailPre;
 }
 
-WebUI.setText(sg.email_input, "${email}", FailureHandling.STOP_ON_FAILURE);
-WebUI.setText(sg.password_input, "${password}", FailureHandling.STOP_ON_FAILURE);
+//hacer clic en enlace de verificacion
+a_verifyPre = WebUI.verifyElementPresent(gm.verifyA, 1, FailureHandling.CONTINUE_ON_FAILURE)
+link_verifyPre = WebUI.verifyElementPresent(gm.verifyLink, 1, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(sg.btn_login, FailureHandling.STOP_ON_FAILURE);
-WebUI.delay(3);
-
-ec.executeAmkScript(k.KEY_AMK_RECAPTCHA_SGLOGIN);
+if(a_verifyPre) {
+	WebUI.click(gm.verifyA, FailureHandling.CONTINUE_ON_FAILURE)
+}else if(link_verifyPre) {
+	WebUI.click(gm.verifyLink, FailureHandling.CONTINUE_ON_FAILURE)
+}else {
+	ec.executeAmkScript(k.KEY_AMK_VERIFY_GMAIL);
+}

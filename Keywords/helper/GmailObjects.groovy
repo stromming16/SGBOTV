@@ -20,7 +20,11 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
 import internal.GlobalVariable
 
-public class EnvConfig {
-	public String pcusername = "administrador";
-	public String disco = "C";
+public class GmailObjects {
+
+	public TestObject firtsMail = findTestObject('Object Repository/GmailInboxObjects/tr_seleccionada, StormGain, Please');
+	public TestObject firtsMail_1 = findTestObject('Object Repository/GmailInboxObjects/span_Verifica tu direccin de correo');
+	public TestObject recibidosBtn = findTestObject('Object Repository/GmailInboxObjects/a_Recibidos');
+	public TestObject verifyLink = findTestObject('Object Repository/GmailInboxObjects/a_link');
+	public TestObject verifyA = findTestObject('Object Repository/GmailInboxObjects/a_Verify email');
 }

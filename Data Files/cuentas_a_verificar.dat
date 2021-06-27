@@ -6,7 +6,7 @@
    <containsHeaders>true</containsHeaders>
    <csvSeperator>COMMA</csvSeperator>
    <dataFileGUID>cb2b84cd-06a7-4763-a6aa-1be504d1326b</dataFileGUID>
-   <dataSourceUrl>Z:\Cuentas in process\para_procesar.csv</dataSourceUrl>
+   <dataSourceUrl>Z:\depuradas\CUENTAS_PARA_ASOCIAR_V88.csv</dataSourceUrl>
    <driver>CSV</driver>
    <isInternalPath>false</isInternalPath>
    <query></query>

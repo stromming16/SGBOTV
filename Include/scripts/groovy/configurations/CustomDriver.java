@@ -31,7 +31,28 @@ public class CustomDriver {
 		List<String> arguments = new ArrayList<String>();
 		arguments.add(c.PROF_CONF_USER_DATA_DIR);
 		arguments.add(c.PROF_CONF_DIRECTORY+profile);
-		arguments.add(c.PROF_CONF_ANTICATCHA_EXT);
+		arguments.add(c.PROF_CONF_LOAD_EXTNS);
+		
+		options.addArguments(arguments);
+		//options.addExtensions(new File(c.ANTICATCHA_EXT));
+		
+		WebDriver driver = new ChromeDriver(options); 
+		
+		return driver;
+	}
+	
+public WebDriver getDriver1(String profile) {
+		
+		Configurations c = new Configurations();
+
+		// Optional. If not specified, WebDriver searches the PATH for chromedriver.       
+		System.setProperty("webdriver.chrome.driver", c.CHROME_DRIVER);  
+		ChromeOptions options = new ChromeOptions();
+		
+		List<String> arguments = new ArrayList<String>();
+		arguments.add(c.PROF_CONF_USER_DATA_DIR);
+		arguments.add(c.PROF_CONF_DIRECTORY+profile);
+		arguments.add(c.PROF_CONF_LOAD_EXTNS_2);
 		
 		options.addArguments(arguments);
 		//options.addExtensions(new File(c.ANTICATCHA_EXT));

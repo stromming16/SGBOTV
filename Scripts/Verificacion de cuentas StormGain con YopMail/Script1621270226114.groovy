@@ -47,13 +47,13 @@ ExecuteCmd ec = new ExecuteCmd()
 
 CustomDriver cd = new CustomDriver()
 
-String csvPath = (k.KEY_FOLDER_VERI + timestamp.getTime()) + '-VERIFICADAS.csv'
+//String csvPath = (k.KEY_FOLDER_VERI + timestamp.getTime()) + '-VERIFICADAS.csv'
 
-String csvPath1 = (k.KEY_FOLDER_VERI_ND + timestamp.getTime()) + '-PARA_VERIFICAR_PROXIMO_DIA.csv'
+//String csvPath1 = (k.KEY_FOLDER_VERI_ND + timestamp.getTime()) + '-PARA_VERIFICAR_PROXIMO_DIA.csv'
 
-am.createFileCSV(csvPath1, 'id,email,password')
+//am.createFileCSV(csvPath1, 'id,email,password')
 
-am.createFileCSV(csvPath, 'id,email,password')
+//am.createFileCSV(csvPath, 'id,email,password')
 
 String dataTest = 'cuentas_a_verificar'
 
@@ -64,6 +64,7 @@ WebUI.maximizeWindow()
 
 //Ejecuta script para agregar llave de Anti Recaptcha
 //ec.executeAmkScript(k.KEY_AMK_ACTIVATE_ANTICAPTCHA);
+
 for (def row = 1; row <= findTestData(dataTest).getRowNumbers(); row++) {
 	boolean passed = false;
 	String email, new_mail, sessionEmail, password;
@@ -126,9 +127,7 @@ for (def row = 1; row <= findTestData(dataTest).getRowNumbers(); row++) {
 						ec.executeAmkScript(k.KEY_AMK_RECAPTCHA_SGSEND_MAIL);
 						msg_mail_sentPre = WebUI.verifyElementPresent(sg.msg_mail_sent, 1, FailureHandling.CONTINUE_ON_FAILURE);
 					}
-					
 				
-					
 					boolean input_emailPre = false, btn_emailPre = false, a_verifyPre = false, a_StormGainPre = false;
 					//navegar a la pagina de yopmail
 					WebUI.navigateToUrl('http://www.yopmail.com/');

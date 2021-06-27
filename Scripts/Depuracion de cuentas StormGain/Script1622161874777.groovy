@@ -53,11 +53,6 @@ am.createFileCSV(csvPath, 'id,email,password,verified')
 
 String dataTest = 'cuentas_a_verificar'
 
-//Abrir el explorador
-DriverFactory.changeWebDriver(cd.getDriver('1'))
-
-WebUI.maximizeWindow()
-
 //Ejecuta script para agregar llave de Anti Recaptcha
 //ec.executeAmkScript(k.KEY_AMK_ACTIVATE_ANTICAPTCHA);
 for (def row = 1; row <= findTestData(dataTest).getRowNumbers(); row++) {
@@ -73,6 +68,11 @@ for (def row = 1; row <= findTestData(dataTest).getRowNumbers(); row++) {
 			
 			//Inicio de sesion
 			boolean error_loginPre = false, msg_mail_sentPre = false, _000USDPre = false, span_USDTPre = false, div_USDT_trianglePre = false, emailIsPre = false, verified_badge_emailPre = false, unverified_badge_emailPre = false, span_Edit_emailPre = false;
+			
+			//Abrir el explorador
+			DriverFactory.changeWebDriver(cd.getDriver('1'))
+			
+			WebUI.maximizeWindow()
 			
 			//navegar a la pantalla de perfil
 			WebUI.navigateToUrl('https://app.stormgain.com/profile-settings/#modal_login')
@@ -124,9 +124,11 @@ for (def row = 1; row <= findTestData(dataTest).getRowNumbers(); row++) {
 				passed = true;
 			}
 			
-		} catch (Exception e) {
-			System.out.println(e);
-			e.printStackTrace()
-		}
-	}
+			WebUI.closeBrowser();
+        }
+        catch (Exception e) {
+			WebUI.closeBrowser();
+            e.printStackTrace()
+        } 
+    }
 }

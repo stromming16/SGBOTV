@@ -21,10 +21,10 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable
 
 public class JmTestObjects {
-	
+
 	//find mail objects
 	public TestObject input_email = findTestObject('Object Repository/YopMailObjects/Page_YOPmail - Disposable Email Address/iframe_Inbox_ifinbox');
-	public TestObject btn_email = findTestObject('Object Repository/YopMailObjects/Page_YOPmail - Disposable Email Address/input_Type the Email name of your choice_sbut'); 
+	public TestObject btn_email = findTestObject('Object Repository/YopMailObjects/Page_YOPmail - Disposable Email Address/input_Type the Email name of your choice_sbut');
 
 	//link verification objects
 	public TestObject a_verify = findTestObject('Object Repository/YopMailObjects/Page_YOPmail - Inbox/a_Verify email (1)');
