@@ -21,6 +21,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable
 
 public class EnvConfig {
-	public String pcusername = "administrador";
+	public String pcusername = "admin";
 	public String disco = "C";
 }

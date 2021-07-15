@@ -59,7 +59,7 @@ String dataTest = 'cuentas_a_verificar'
 
 //Ejecuta script para agregar llave de Anti Recaptcha
 //ec.executeAmkScript(k.KEY_AMK_ACTIVATE_ANTICAPTCHA);
-for (def row = 190; row <= findTestData(dataTest).getRowNumbers(); row++) {
+for (def row = 88; row <= findTestData(dataTest).getRowNumbers(); row++) {
     boolean passed = false
 
     String email

@@ -37,7 +37,9 @@ if(!wellcomePre || !password_input || !password_inputPre) {
 WebUI.setText(sg.email_input, "${email}", FailureHandling.STOP_ON_FAILURE);
 WebUI.setText(sg.password_input, "${password}", FailureHandling.STOP_ON_FAILURE);
 
-WebUI.click(sg.btn_login, FailureHandling.STOP_ON_FAILURE);
+WebUI.sendKeys(sg.password_input, Keys.chord(Keys.ENTER), FailureHandling.STOP_ON_FAILURE)
+
+//WebUI.click(sg.btn_login, FailureHandling.STOP_ON_FAILURE);
 WebUI.delay(3);
 
 ec.executeAmkScript(k.KEY_AMK_RECAPTCHA_SGLOGIN);

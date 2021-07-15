@@ -112,7 +112,7 @@ for (def row = 1; row <= findTestData(dataTest).getRowNumbers(); row++) {
 				unverified_badge_emailPre = WebUI.verifyElementAttributeValue(sg.unverified_badge_email, "class", "not-verified-badge tooltip-info", 1, FailureHandling.CONTINUE_ON_FAILURE)
 				_verified = (verified_badge_emailPre && !unverified_badge_emailPre) ? "SI" : "NO";
 				//si la cuenta ya esta verificada agregarla al csv
-				am.addAccountToCsv(csvPath, '1,'+new_mail+','+password+','+_verified);
+				am.addAccountToCsv(csvPath, '1,'+email+','+password+','+_verified);
 				passed = true
 	
 				//cierre de sesion
